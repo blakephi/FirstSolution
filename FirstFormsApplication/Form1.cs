@@ -27,17 +27,17 @@ namespace FirstFormsApplication
             if (operation.Equals("+"))
             {
                 result = num1 + num2;
-                resultLabel.Text = result.ToString();
+                resultOfOp.Text = result.ToString();
             }
             else if (operation.Equals("-"))
             {
                 result = num1 - num2;
-                resultLabel.Text = result.ToString();
+                resultOfOp.Text = result.ToString();
             }
             else if (operation.Equals("*"))
             {
                 result = num1 * num2;
-                resultLabel.Text = result.ToString();
+                resultOfOp.Text = result.ToString();
             }
         }
 

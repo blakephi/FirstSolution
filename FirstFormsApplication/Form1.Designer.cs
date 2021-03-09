@@ -37,6 +37,7 @@ namespace FirstFormsApplication
             this.getNum2 = new System.Windows.Forms.TextBox();
             this.getOperation = new System.Windows.Forms.TextBox();
             this.resultLabel = new System.Windows.Forms.Label();
+            this.resultOfOp = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // calculateButton
@@ -111,11 +112,20 @@ namespace FirstFormsApplication
             this.resultLabel.Text = "Result: ";
             this.resultLabel.Click += new System.EventHandler(this.resultLabel_Click);
             // 
+            // resultOfOp
+            // 
+            this.resultOfOp.AutoSize = true;
+            this.resultOfOp.Location = new System.Drawing.Point(409, 309);
+            this.resultOfOp.Name = "resultOfOp";
+            this.resultOfOp.Size = new System.Drawing.Size(0, 13);
+            this.resultOfOp.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.resultOfOp);
             this.Controls.Add(this.resultLabel);
             this.Controls.Add(this.getOperation);
             this.Controls.Add(this.getNum2);
@@ -142,6 +152,7 @@ namespace FirstFormsApplication
         private System.Windows.Forms.TextBox getNum2;
         private System.Windows.Forms.TextBox getOperation;
         private System.Windows.Forms.Label resultLabel;
+        private System.Windows.Forms.Label resultOfOp;
     }
 }
 
