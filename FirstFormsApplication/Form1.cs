@@ -23,7 +23,24 @@ namespace FirstFormsApplication
             num1 = Convert.ToInt32(getNum1.Text);
             num2 = Convert.ToInt32(getNum2.Text);
             String operation = Convert.ToString(getOperation.Text);
+
+            if (operation.Equals("+"))
+            {
+                result = num1 + num2;
+                resultLabel.Text = result.ToString();
+            }
+            else if (operation.Equals("-"))
+            {
+                result = num1 - num2;
+                resultLabel.Text = result.ToString();
+            }
+            else if (operation.Equals("*"))
+            {
+                result = num1 * num2;
+                resultLabel.Text = result.ToString();
+            }
         }
+
         private void getNum1_TextChanged(object sender, EventArgs e)
         {
 

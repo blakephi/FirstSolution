@@ -17,23 +17,6 @@ namespace FirstConsoleApplication
             Console.WriteLine("Select an operation to perform on the 2 numbers: ");
             Console.WriteLine("1. Addition, 2. Subtraction, 3. Multiplication");
             int operation = Convert.ToInt32(Console.ReadLine());
-
-            int result = 0;
-            if (operation == 1)
-            {
-                result = num1 + num2;
-                Console.WriteLine("\nThe sum of " + num1 + " and " + num2 + " is: " + result);
-            }
-            if (operation == 2)
-            {
-                result = num1 - num2;
-                Console.WriteLine("\nThe difference of " + num1 + " and " + num2 + " is: " + result);
-            }
-            if (operation == 3)
-            {
-                result = num1 * num2;
-                Console.WriteLine("\nThe product of " + num1 + " and " + num2 + " is: " + result);
-            }
         }
     }
 }
